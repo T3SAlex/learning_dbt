@@ -2,9 +2,11 @@ version: 2
 
 sources:
   - name: stripe
+    description: A clone of a Postgres database
     database: raw
     tables:
       - name: payment
+        description: Raw payments data
         config:
           loaded_at_field: _batched_at
           freshness:
